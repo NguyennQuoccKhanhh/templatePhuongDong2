@@ -52,7 +52,7 @@ nav ul li:hover::after {
 }
 
 .bgSection1 {
-    background: url('../public/img/banner.png') no-repeat center center;
+    background: url('../public/img/banner.png') no-repeat center;
     background-size: cover;
 }
 
@@ -75,12 +75,7 @@ nav ul li:hover::after {
     border-radius: 8px;
     box-sizing: border-box;
 }
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 8px;
-}
+
 
 .swiper-wrapper {
     display: flex;
@@ -152,7 +147,12 @@ nav ul li:hover::after {
     background-color: #3EED8B;
     width: 40px;
 }
-
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
 
 
 

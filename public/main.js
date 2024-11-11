@@ -26,13 +26,9 @@ var gridSwiper = new Swiper(".gridSwiper ", {
         slidesPerView: 3,
         grid: { rows: 3 },
       },
-      1024: { 
+      0: { 
         slidesPerView: 3,
         grid: { rows: 2 },
-      },
-      1023: {
-        slidesPerView: 1,
-        grid: { rows: 1 },
       }
     },
     navigation: {
