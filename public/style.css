@@ -5,7 +5,10 @@
     padding-right: 1rem;
     width: 100%;
 }
-
+section {
+    width: 1920px;
+    margin: 0 auto;
+}
 
 nav ul {
     display: flex;
