@@ -4,7 +4,8 @@ const clickMenu = document.getElementById('clickMenu');
 if (dropMenu && clickMenu) {  // Kiểm tra sự tồn tại của cả dropMenu và clickMenu
     document.addEventListener('click', (e) => {
         if (clickMenu.contains(e.target)) {
-            dropMenu.classList.toggle('hidden');
+            // dropMenu.classList.toggle('hidden');
+            dropMenu.classList.toggle('active');
         } else if (!dropMenu.contains(e.target)) {
             dropMenu.classList.add('hidden');
         }
@@ -12,24 +13,13 @@ if (dropMenu && clickMenu) {  // Kiểm tra sự tồn tại của cả dropMenu
 }
 
 var gridSwiper = new Swiper(".gridSwiper ", {
-    slidesPerView: 3,
+    slidesPerView: 2.8,
     grid: {
         rows: 3,
     },
-    slidesPerView: 3,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-    },
-    breakpoints: {
-      1280: { 
-        slidesPerView: 3,
-        grid: { rows: 3 },
-      },
-      0: { 
-        slidesPerView: 3,
-        grid: { rows: 2 },
-      }
     },
     navigation: {
         nextEl: '.docterNext',
@@ -40,6 +30,7 @@ var gridSwiper = new Swiper(".gridSwiper ", {
         el: ".swiper-pagination",
         clickable: true,
     },
+    
 });
 
 var swiper = new Swiper(".singleSwiper", {
@@ -51,6 +42,7 @@ var swiper = new Swiper(".singleSwiper", {
         nextEl: '.docterNext2',
         prevEl: '.docterPrev2',
     },
+    
 });
 
 
@@ -66,12 +58,16 @@ var threeSwiper = new Swiper(".threeSwiper", {
         prevEl: '.docterPrev3',
     },
     breakpoints: {
-        1280: {
-            slidesPerView: 2,
-        },
-        1024: {
+        
+        0: {
             slidesPerView: 1,
         },
+        1024: {
+            slidesPerView: 2,
+        },
+        1280: {
+            slidesPerView: 3,
+        }
     },
     
 });
